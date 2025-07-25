@@ -234,6 +234,7 @@ img {
   margin-top: 2rem;
   transition: all 0.3s ease;
   text-align: center;
+  margin-left: 0;
 }
 
 .nav__button:hover {
@@ -554,6 +555,19 @@ img {
     column-gap: 3rem;
   }
 
+  .nav__button {
+    background-color: hsla(0, 0%, 100%, 0.15);
+    color: var(--title-color);
+    padding: 0.6rem 1.25rem;
+    border-radius: 8px;
+    font-family: var(--second-font);
+    font-weight: var(--font-medium);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
   .nav__link {
     color: var(--title-color);
     font-family: var(--second-font);
@@ -687,4 +701,26 @@ img {
   margin-top: 2rem;
   font-size: var(--smaller-font-size);
   color: var(--text-color-light);
+}
+
+/* Mobile menu */
+@media screen and (max-width: 768px) {
+  .nav__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+  }
+
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    align-items: center;
+  }
+
+  .nav__button {
+    align-self: center;
+    margin-top: 1rem;
+  }
 }
